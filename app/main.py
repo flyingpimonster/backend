@@ -369,6 +369,7 @@ def get_app(appid: str, response: Response):
         "translateUrl": app.get("urls").get("translate"),
         "bugtrackerUrl": app.get("urls").get("bugtracker"),
         "categories": categories,
+        "content_rating": app.get("content_rating"),
         "downloadFlatpakRefUrl": f"https://dl.flathub.org/repo/appstream/{appid}.flatpakref",
         "currentReleaseVersion": release.get("version"),
         "currentReleaseDescription": release.get("description"),
